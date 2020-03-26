@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Product name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th align="center"><span id="amount" class="amount">Amount</span></th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">Grand Total:</td>
+                    <td align="right"><span id="total" class="total">TOTAL</span> Tk</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">Discount 10%:</td>
+                    <td align="right"><span id="discount" class="discount">DISCOUNT</span> Tk</td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                
+                <tr>
+                    <td>Product 1</td>
+                    <td>
+                        <select value="" class="qty" name="qty">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" value="100" class="price" readonly>
+                    </td>
+                    <td align="center"><span id="amount" class="amount">0</span> Tk</td>
+                </tr>
+
+                <tr>
+                    <td>Product 2</td>
+                    <td>
+                        <select value="" class="qty" name="qty">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" value="100" class="price" readonly>
+                    </td>
+                    <td align="center"><span id="amount" class="amount">0</span> Tk</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <script src="custom.js"></script>
+
+    </body>
+</html>
